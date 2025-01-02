@@ -62,7 +62,10 @@ if not getgenv().StingrayLoaded then
   -- Black screen check -- 
   task.spawn(function() 
       task.wait(120) 
-      --if LocalPlayer.PlayerGui.Main.Frame.BottomLeft.Bars.Health.Amount.Text == "50" then game:GetService("TeleportService"):Teleport(10450270085) --end end) 
+      if LocalPlayer.PlayerGui.Main.Frame.BottomLeft.Bars.Health.Amount.Text == "50" then 
+        game:GetService("TeleportService"):Teleport(10450270085) 
+      end 
+    end) 
       if game.PlaceId == 10450270085 then 
         game:GetService("TeleportService"):Teleport(119359147980471) 
       elseif game.PlaceId == 119359147980471 then 
